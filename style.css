@@ -1,0 +1,112 @@
+/* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('nn.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 150px 0;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Button Styles */
+button {
+    background-color: #e50914;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff3e25;
+}
+
+/* Movies Section Styles */
+.movies {
+    padding: 20px 5%;
+}
+
+.movie-list {
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+}
+
+.movie {
+    width: 200px;
+}
+
+.movie img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000;
+    color: #777;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    .logo img {
+        width: 80px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
